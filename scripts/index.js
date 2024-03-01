@@ -70,7 +70,7 @@ world.beforeEvents.chatSend.subscribe((data) => {
             for (let i = 0; i < 5; i++) {
                 const item = entity_inv.getItem(i);
                 const slotName = ["Offhand", "Head", "Chest", "Legs", "Feet"][i];
-                const equippedItem = equipment.getEquipment(slotName);
+                const equippedItem = system.run(() => equipment.getEquipment(slotName));
                 if (item) {
                     if (equippedItem) {
                         if (inventory.emptySlotsCount > 0) {
