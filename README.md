@@ -1,5 +1,5 @@
 # Easy kits
-### A simple addon for creating kits!
+**A simple addon for creating kits!**
 ## Features:
 - All item metadata is preserved
 - Accounts for equipped items
@@ -16,3 +16,5 @@
 8. Enjoy the game!
 
 **If you find a bug, please let me know!**
+
+**Join my [Discord server](https://discord.com/invite/WHKByQvdsR) dedicated to addons!**
