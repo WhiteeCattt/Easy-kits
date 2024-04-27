@@ -205,6 +205,7 @@ async function KitUI(player) {
                                 if (!tag.length) return player.sendMessage(config.prefix + "Enter the tag!")
                                 if (kit.tags.includes(tag)) return player.sendMessage(config.prefix + "This tag already exists in this kit!")
                                 kit.tags.push(tag)
+                                KitDB.save()
                                 player.sendMessage(config.prefix + `You have successfully added the tag ${tag}§r to the kit §g${kit.name}§r!`)
                             })
                         } else if (result3.selection == 1) {
